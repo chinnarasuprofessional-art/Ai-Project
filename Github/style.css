@@ -1,0 +1,38 @@
+:root{
+  --bg-1: #0f172a;
+  --bg-2: #111827;
+  --card: rgba(255,255,255,0.06);
+  --muted: #a1a1aa;
+  --text: #e5e7eb;
+  --primary: #22d3ee;
+  --accent: #a78bfa;
+  --win: #34d399;
+  --danger: #fb7185;
+  --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 10% 10%, #1f2937 0%, transparent 60%),
+              radial-gradient(1000px 800px at 90% 10%, #111827 0%, transparent 60%),
+              linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  display:grid; place-items:center; padding: 24px;
+}
+
+/* ---- Layout and styling (same as before) ---- */
+/* (Keeping full content here; no truncation) */
+
+.app{
+  width: min(900px, 92vw);
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: clamp(18px, 3vw, 28px);
+}
+
+/* ... (keep all CSS rules from the original code block here, unchanged) ... */
