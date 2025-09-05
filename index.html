@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe – Elegant & Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" role="application" aria-label="Tic Tac Toe Game">
+    <header>
+      <div class="title">
+        <div class="logo">TTT</div>
+        <div>
+          <h1>Tic Tac Toe</h1>
+          <div class="subtitle">Simple • Elegant • Responsive</div>
+        </div>
+      </div>
+      <div class="controls">
+        <label>
+          <select id="mode" class="select" aria-label="Game mode">
+            <option value="pvp">2 Players</option>
+            <option value="cpu">Vs Computer</option>
+          </select>
+        </label>
+        <label>
+          <select id="starter" class="select" aria-label="Who starts">
+            <option value="X">X starts</option>
+            <option value="O">O starts</option>
+          </select>
+        </label>
+        <button id="newRound" class="btn">New Round</button>
+        <button id="reset" class="btn ghost">Reset Scores</button>
+      </div>
+    </header>
+
+    <div class="grid-wrapper">
+      <section class="board" aria-labelledby="boardTitle">
+        <h2 id="boardTitle" class="sr-only" style="position:absolute;left:-9999px">Board</h2>
+        <div class="cells" role="grid" aria-label="3 by 3 grid">
+          <button class="cell" data-idx="0" role="gridcell" aria-label="Cell 1"></button>
+          <button class="cell" data-idx="1" role="gridcell" aria-label="Cell 2"></button>
+          <button class="cell" data-idx="2" role="gridcell" aria-label="Cell 3"></button>
+          <button class="cell" data-idx="3" role="gridcell" aria-label="Cell 4"></button>
+          <button class="cell" data-idx="4" role="gridcell" aria-label="Cell 5"></button>
+          <button class="cell" data-idx="5" role="gridcell" aria-label="Cell 6"></button>
+          <button class="cell" data-idx="6" role="gridcell" aria-label="Cell 7"></button>
+          <button class="cell" data-idx="7" role="gridcell" aria-label="Cell 8"></button>
+          <button class="cell" data-idx="8" role="gridcell" aria-label="Cell 9"></button>
+        </div>
+      </section>
+
+      <aside class="panel" aria-live="polite">
+        <div class="status">Turn: <span id="turn" class="badge">X</span></div>
+        <div id="message" class="subtitle">First to 3 in a row wins.</div>
+
+        <div class="scores" aria-label="Scoreboard">
+          <div class="score-card X"><div class="label">X</div><div id="sx" class="value">0</div></div>
+          <div class="score-card O"><div class="label">O</div><div id="so" class="value">0</div></div>
+          <div class="score-card D"><div class="label">Draw</div><div id="sd" class="value">0</div></div>
+        </div>
+
+        <div>
+          <p class="subtitle" style="margin:12px 0 6px">Tips</p>
+          <ul style="margin:0 0 6px 18px; color: var(--muted); line-height:1.6">
+            <li>Click or tap a square to place your mark.</li>
+            <li>Use <em>New Round</em> to keep scores and start fresh.</li>
+            <li>Switch to <em>Vs Computer</em> for a quick challenge.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤ – no frameworks, just HTML, CSS & JavaScript.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* style.css */
+/* Paste all CSS code from earlier <style> tag here */
+
+
+// script.js
+// Paste all JavaScript code from earlier <script> tag here
+
+  
